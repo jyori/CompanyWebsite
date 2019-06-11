@@ -1,0 +1,76 @@
+{% extends "company/base.html" %}
+{% load static %}
+<!--  we can use base template by extending it; we want our for loop or any other content present in home page to override the blockcontent of base.html-->
+{% block content %} 
+
+            <!-- start banner Area -->
+            <section class="banner-area relative" id="home">    
+                <div class="overlay overlay-bg">
+                
+                </div>
+                <div class="container">
+                    <div class="row d-flex align-items-center justify-content-center">
+                        <div class="about-content col-lg-12">
+                            <h1 class="text-white">
+                                Careers               
+                            </h1>   
+                            <p class="text-white link-nav"><a href="{% url 'index' %}">Home </a>  <span class="lnr lnr-arrow-right"></span>  <a href="{% url 'career' %}"> Careers</a></p>
+                        </div>                                          
+                    </div>
+                </div>
+            </section>
+            <!-- End banner Area -->    
+			     
+            <div class="">
+            <div class="container">
+                <div class="row">
+                <div class="col-md-4 col-sm-4 col-lg-4">
+    
+    </div>
+    <div class="col-md-4 sec-title-two">
+        <h2 class="heading" style="margin-top: 20px;">Current Openings</h2>
+        
+    </div>
+    
+    <div class="col-md-4 col-lg-4 col-sm-4">
+    
+    </div>
+                
+                </div>   
+            </div>
+            <div class="container">
+            
+            <div class="row">
+            <div class="service-block-two col-lg-4 col-md-6 col-sm-6 col-xs-12">
+            {% for i in content %}
+                    <div class="inner-box col-xs-6" >
+                        <div class="image-box" style="background-image:url({{ i.backimage.url }});"></div>
+                        
+                        <h3 class="text-uppercase" style="padding-top: 10px;" >{{ i.title }}</h3>
+                        
+                        <h3 class="text-uppercase" style="font-size: 24px;" >{{ i.ContentTitle }}</h3>
+                        <div class="text" style="text-align: justify;">
+                        <ul style=" list-style:circle">
+                            <li>
+                            {{ i.content| safe }}
+                            </li>
+                            
+                        </ul>
+                        </div>
+                        <button class="read-more" style="padding: 5px 10px;; color: #fff; background: #ff6c00; border: none; border-radius: 30px; font-size: 14px;">
+                            Apply Now
+                        </button>
+                    </div>
+            {% endfor %}
+                </div>
+            
+                 
+                    </div>
+                </div>
+                
+                
+            </div>
+            
+		
+
+{% endblock content%}

@@ -1,0 +1,34 @@
+{% extends "company/base.html" %}
+{% load static %}
+<!--  we can use base template by extending it; we want our for loop or any other content present in home page to override the blockcontent of base.html-->
+{% block content %}	
+			  
+			<!-- start banner Area -->
+			<section class="banner-area relative" id="home">	
+				<div class="overlay overlay-bg"></div>
+				<div class="container">
+					<div class="row d-flex align-items-center justify-content-center">
+						<div class="about-content col-lg-12">
+							<h1 class="text-white">
+				                Software Development				
+							</h1>	
+							<p class="text-white link-nav"><a href="{% url 'index' %}">Home </a>  <span class="lnr lnr-arrow-right"></span>  <a href="{% url 'services' %}">Services Home </a></p>
+						</div>											
+					</div>
+				</div>
+			</section>
+			<!-- End banner Area -->	
+			
+			<!-- Start blog-posts Area -->
+			<section class="blog-posts-area section-gap">
+				<div class="container-fluid">
+					<div class="row">
+                        
+                    </div>
+				</div>	
+			</section>
+			<!-- End blog-posts Area -->
+			
+
+{% endblock content%}
+			

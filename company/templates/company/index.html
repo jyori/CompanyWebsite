@@ -1,0 +1,352 @@
+{% extends "company/base.html" %}
+{% load static %}
+<!--  we can use base template by extending it; we want our for loop or any other content present in home page to override the blockcontent of base.html-->
+{% block content %}
+    <!-- start banner Area -->
+            <section class="banner-area relative" id="home"  style="">
+                <div class="overlay overlay-bg"></div>
+                    
+                
+                    
+                        
+                                                              <!-- main image slider container -->
+<div id="slider-main">
+
+    <!-- previous button -->
+<button id="prev"><i class="fa fa-angle-double-left"></i></button>
+
+    <!-- image container -->
+<div id="slider"></div>
+
+    <!-- next button -->
+    <button id="next"><i class="fa fa-angle-double-right"></i></button>
+
+    <!-- small circles container -->
+    <div id="circles"></div>
+
+</div>
+<!-- end of main image slider container -->
+                        
+                        <script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha384-tsQFqpEReu7ZLhBV2VZlAu7zcOV+rXbYlF2cqB8txI/8aZajjp4Bqd+V6D5IgvKT" crossorigin="anonymous"></script>
+<!-- image slider script -->
+<script src="{% static 'company/js/image-slider.js' %}"></script>
+<script type="text/javascript">
+
+  var _gaq = _gaq || [];
+  _gaq.push(['_setAccount', 'UA-36251023-1']);
+  _gaq.push(['_setDomainName', 'jqueryscript.net']);
+  _gaq.push(['_trackPageview']);
+
+  (function() {
+    var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+    ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+  })();
+
+</script>
+
+                       
+            </section>
+            <!-- End banner Area -->
+
+            <!-- Start cat Area -->
+            <section class="cat-area section-gap" id="feature">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-md-3"></div>
+                        <div class="aboutus col-md-6 ">
+                            <h3 style="text-align: center; margin-bottom: 20px;">NETCOREINFO BUSINESS SERVICES</h3> 
+                        </div>
+                        <div class="col-md-3"></div> 
+                        <p style="margin: 20px; text-align: justify">NetcoreInfo Solution has been launched with a clear vision to become multi-skilled and multi-dimensional IT service providers with a focus on high end strategic solutions and with the ultimate aim to evolve and become a leading One Stop internet strategy consulting company.</p>
+                    </div>
+                
+                    <div class="row">
+                        
+                        <div class="col-lg-4">  
+                            <div class="single-cat d-flex flex-column">
+                                <a href="#" class="hb-sm-margin mx-auto d-block"><span class="hb hb-sm inv hb-facebook-inv"><span class="lnr lnr-magic-wand"></span></span></a>
+                                <h4 class="mb-20" style="margin-top: 23px;">OUR MISSION</h4>
+                                <p style="text-align: justify;">
+                                    
+NetcoreInfo Business Services was launched with the mission of creating an IT revolution with the methodology of getting back to basics i.e. working with a handful of talented, skilled and experienced people and keeping things sincere, focused and thoughtful in a deterministic and idealistic way. 
+.
+                                </p>
+                            </div>                                                          
+                        </div>
+                        
+                        <div class="col-lg-4">
+                            <div class="single-cat">
+                                <a href="#" class="hb-sm-margin mx-auto d-block"><span class="hb hb-sm inv hb-facebook-inv"><span class="lnr lnr-bug"></span></span></a>
+                                <h4 class="mt-40 mb-20" >OUR PARTNERS</h4>
+                                <p style="text-align: justify;">
+                                Professionally, NetcoreInfo Business Services collaborates with numerous prominent organisations like Genpact, Accenture, Aditya-Birla Group, HCL, Jindal Group, Paytm, Acer and many other government bodies for the purpose of providing business services to them on both small-scale and large-scale basis. Moreover, NetcoreInfo Business Services associates with some prominent business partners like JINDAL Group, Nagarro, Pachayati Times, etc 
+
+                                </p>
+                            </div>                          
+                        </div>
+                        <div class="col-lg-4">  
+                            <div class="single-cat">
+                                <a href="#" class="hb-sm-margin mx-auto d-block"><span class="hb hb-sm inv hb-facebook-inv"><span class="lnr lnr-rocket"></span></span></a>
+                                <h4 class="mt-40 mb-20">OUR VISION</h4>
+                                <p style="text-align: justify;">
+                                    NetcoreInfo Business Services was launched with a clear and specific vision to become one of the biggest and greatest multi-skilled and multi-dimensional IT service providers with a determined focus on providing our clients/business partners, high-end strategic solutions for the purpose of Brand creation and development.
+                                </p>
+                            </div>                                                          
+                        </div>
+                    </div>
+                </div>  
+            </section>
+            <!-- End cat Area -->       
+            
+
+            <!-- Start home-about Area -->
+            
+            <!-- End home-about Area -->
+                    
+
+            <!--Training Programs-->
+    <section class="training-programs">
+        <div class="auto-container">
+            <div class="sec-title-one clearfix">
+                <div class="sec-title-two">
+                    <h2>Services</h2>
+                    <div class="text" style="text-align: justify;"><strong>NetcoreInfo Business Services has been a trusted and well-established IT service providing Company since a decade as we create meaningful brands through individuality, print and digital experiences for small entrepreneurs all over the world. NetcoreInfo Business Services provides services for small to large businesses around the country. Our specialities in Domains include Custom Website Design and Development, E-commerce Solutions, Logo Designs, Software Solutions, Digital Marketing Solutions, Mobility Solutions, etc.
+NetcoreInfo Business Services provide effective & Measurable Online Brand Engineering Solutions and our major services include Web Development, Mobile Application Development, Web Application Development, Open Source Development, Graphic Designing, Internet Marketing, E-Commerce Development, Multivendor Ecommerce, Content Management System, Software solution, Web Hosting Services, ERP Development, and many more.</strong></div>
+                </div>
+            </div>
+            <div class="row clearfix">
+                <!--Service Block Two-->
+                <div class="service-block-two col-lg-4 col-md-6 col-sm-6 col-xs-12">
+                    <div class="inner-box">
+                        <div class="image-box" style="background-image:url({%static 'company/images/wd.jpg'%});"></div>
+                        <div class="icon-box">
+                            <span class="flaticon"><img src="{% static 'company/images/icons/software-development.png' %}" alt="Software Development in Noida, Delhi, NCR"></span>
+                        </div>
+                        <h3 class="text-uppercase">WEB DEVELOPMENT</h3>
+                        <div class="text"><P style="text-align: justify;">Since technology changes rapidly by evolving over timly basis, businesses or the new start-ups have to keep investing in newer applications, and also maintain, enhance/re-engineer legacy systems. Customized web development offers options for businesses/start-ups who seek to provide a flexible, consistent and user friendly experience for users across platforms. Leveraging new approaches to web development including progressive web apps, we bring front-end, back-end and architecture ability together to deliver on your business need and maximize delivery speed.
+Get the website features and functionality of your choice & need</P></div>
+                        <button style="background: #fa7b1e; border:none; padding: 5px 5px; border-radius: 30px; font-size: 16px; color: #fff!important;"><a href="web-development.html" class="read-more" style="padding: 5px 10px!important; font-size:12px!important;">Portfolio <span class="fa fa-angle-double-right"></span></a></button>
+
+                    </div>
+                </div>
+
+                <!--Service Block Two-->
+                <div class="service-block-two col-lg-4 col-md-6 col-sm-6 col-xs-12">
+                    <div class="inner-box">
+                        <div class="image-box" style="background-image:url({%static 'company/images/mobile_development.jpg'%});"></div>
+                        <div class="icon-box">
+                            <span class="flaticon"><img src="{% static 'company/images/icons/dynamic-website.png' %}" alt="Dynamic Website Development in Noida, Delhi, NCR"></span>
+                        </div>
+                        <h3 class="text-uppercase">MOBILE APP DEVELOPMENT</h3>
+                        <div class="text" style="text-align: justify;">Mobile app development is one of the most necessary domains for all the businesses. NETCOREINFO BUSINESS SERVICES, as a mobile application development company provides high quality standard mobile app of any category.We have worked with diversified brands, organizations, start-ups and individuals to create powerful apps originating from excellent and innovative ideas.As a mobile app development company our focus is to provide strategic planning & industry’s best product to compete and stand out successfully in the IT world. Moreover, we can help our clients by developing different type of apps originating to various fields like enterprise, e-commerce, games, entertainment, etc.</div>
+             <button style="background: #fa7b1e; border:none; padding: 5px 5px; border-radius: 30px; font-size: 16px; color: #fff!important;"><a href="#" class="read-more" style="padding: 5px 10px!important; font-size:12px!important;">Portfolio <span class="fa fa-angle-double-right"></span></a></button>
+                        
+                    </div>
+                </div>
+                <!--Service Block Two-->
+                <div class="service-block-two col-lg-4 col-md-6 col-sm-6 col-xs-12">
+                    <div class="inner-box">
+                        <div class="image-box" style="background-image:url({%static 'company/images/wa.jpg'%});"></div>
+                        <div class="icon-box">
+                            <span class="flaticon"><img src="{% static 'company/images/icons/web-application.png' %}" alt="Best Web Applications Development in Noida, Delhi, NCR"></span>
+                        </div>
+                        <h3 class="text-uppercase">Web Application</h3>
+                        <div class="text" style="text-align: justify;">NetcoreInfo Business Services is one of the most trusted and experienced web development outsourcing partner for some of the most recognizable companies and big business giants. We have built our global operations on lasting partnerships by offering the finest technical talent to our clients. Our team of talented developers offers our clients' website functioning in whichever manner they please. Our domain speciality is in Custom Web application and development. Investing in the right areas like custom web application and web software development could lead your business to success and help you climb higher on the professional ladder.   .</div>
+                     <button style="background: #fa7b1e; border:none; padding: 5px 5px; border-radius: 30px; font-size: 16px; color: #fff!important;"><a href="#" class="read-more" style="padding: 5px 10px!important; font-size:12px!important;" >Portfolio <span class="fa fa-angle-double-right"></span></a></button>
+                    </div>
+
+                </div>
+                <!--Service Block Two-->
+                <div class="service-block-two col-lg-4 col-md-6 col-sm-6 col-xs-12">
+                    <div class="inner-box">
+                        <div class="image-box" style="background-image:url({% static 'company/images/app.jpg' %});"></div>
+                        <div class="icon-box">
+                            <span class="flaticon"><img src="{% static 'company/images/icons/software-development.png' %}" alt="Android &amp; iOS Mobile Apps Development company in Noida, Delhi, NCR"></span>
+                        </div>
+                        <h3 class="text-uppercase">Open Source Development</h3>
+                        <div class="text" style="text-align: justify;">Cost and agility factors have increased the demand for Open Source technologies in the past few years. Today, organizations are rapidly adopting Open Source technology to quickly develop rich software functions, drive operational effectiveness and eliminate cost associated with proprietary software. NetcoreInfo Business Services dedicated Centre of Competency team (CoC) with experienced Open Source technology consultants and technology experts deliver customizable and innovative Open Source Development Services to suit customers’ individual business needs.</div>
+                        <button style="background: #fa7b1e; border:none; padding: 5px 5px; border-radius: 30px; font-size: 16px; color: #fff!important;"><a href="#" class="read-more" style="padding: 5px 10px!important; font-size:12px!important;">Portfolio <span class="fa fa-angle-double-right"></span></a></button>
+                    </div>
+                </div>
+                
+                <!--Service Block Two-->
+                <div class="service-block-two col-lg-4 col-md-6 col-sm-6 col-xs-12">
+                    <div class="inner-box">
+                        <div class="image-box" style="background-image:url({%static 'company/images/seo-bg.jpg' %});"></div>
+                        <div class="icon-box">
+                            <span class="flaticon"><img src="{% static 'company/images/icons/seo.png' %}" alt="Proven results in SEO services in Noida, Delhi, NCR"></span>
+                        </div>
+                        <h3 class="text-uppercase">Graphic Designing</h3>
+                        <div class="text" style="text-align:justify">NetcoreInfo Business Services provides the clients and customers high quality work with the help of our experienced and innovative designers who deliver only the best graphic design services. Whether you're looking for a spectacular new logo or some stunning flyers, the talented and recognised community of designers at NetcoreInfo Business Services make it happen. We offer full service branding, and design services including Company Naming, Logo Designing, Business Cards, Brochures, and more.</div>
+                        <button style="background: #fa7b1e; border:none; padding: 5px 5px; border-radius: 30px; font-size: 16px; color: #fff!important;"><a href="#" class="read-more" style="padding: 5px 10px!important; font-size:12px!important;">Portfolio <span class="fa fa-angle-double-right"></span></a></button>
+                    </div>
+                </div>
+                <!--Service Block Two-->
+                <div class="service-block-two col-lg-4 col-md-6 col-sm-6 col-xs-12">
+                    <div class="inner-box">
+                        <div class="image-box" style="background-image:url({%static 'company/images/cw-bg.jpg' %});"></div>
+                        <div class="icon-box">
+                            <span class="flaticon"><img src="{% static 'company/images/icons/content-writing.png' %}" alt="Best &amp; original Content Writing in Noida, Delhi, NCR"></span>
+                        </div>
+                        <h3 class="text-uppercase">Internet Marketing</h3>
+                        <div class="text" style="text-align:justify">NetcoreInfo Business Services provides Internet Marketing Services & Internet Advertising and maintains itself as one of the most reputable online marketing companies specializing in search engine optimization (SEO) and search engine marketing (SEM). Our team specializes in search engine positioning through social media marketing and local listing optimization. This helps businesses improve search engine listings to increase traffic. We also help businesses reduce operating costs by providing server administration, content marketing and website maintenance.</div>
+                        <button style="background: #fa7b1e; border:none; padding: 5px 5px; border-radius: 30px; font-size: 16px; color: #fff!important;"><a href="#" class="read-more" style="padding: 5px 10px!important; font-size:12px!important;">Portfolio <span class="fa fa-angle-double-right"></span></a></button>
+                    </div>
+                </div>
+
+                <!--Service Block Two-->
+                <div class="service-block-two col-lg-4 col-md-6 col-sm-6 col-xs-12">
+                    <div class="inner-box">
+                        <div class="image-box" style="background-image:url({%static 'company/images/acad-p.jpg' %});"></div>
+                        <div class="icon-box">
+                            <span class="flaticon"><img src="{% static 'company/images/icons/academic-projects.png' %}" alt="College projects for B.Tech., M.Tech., BCA, MCA students"></span>
+                        </div>
+                        <h3 class="text-uppercase">E-commerce Development</h3>
+                        <div class="text" style="text-align: justify">The services of an ecommerce development company has become imperative now-a-days. <br>NetcoreInfo Business Services is a company that can keep you afloat in the current digital age.<br>These services will help you create an online shopping page. The ecommerce website development services will enable the customers to do business with you by sitting at home. <br>They have a large experience in ecommerce website design and development jobs. The web development ecommerce has caught on and all the major modern businesses are banking on this.</div>
+                        <button style="background: #fa7b1e; border:none; padding: 5px 5px; border-radius: 30px; font-size: 16px; color: #fff!important;"><a href="#" class="read-more" style="padding: 5px 10px!important; font-size:12px!important;">Portfolio <span class="fa fa-angle-double-right"></span></a></button>
+                     
+                    </div>
+                </div>
+            
+ 
+                <!--Service Block Two-->
+                <div class="service-block-two col-lg-4 col-md-6 col-sm-6 col-xs-12">
+                    <div class="inner-box">
+                        <div class="image-box" style="background-image:url({%static 'company/images/traning.jpg' %});"></div>
+                        <div class="icon-box">
+                            <span class="flaticon"><img src="{% static 'company/images/icons/training.png' %}" alt="Software training in Noida, Delhi, NCR"></span>
+                        </div>
+                        <h3 class="text-uppercase">Content Management</h3>
+                        <div class="text" style="text-align: justify">Content management system services optimize the overarching process of producing, managing, and distributing information. Enterprises are striving to reduce the overall cost of digital content management services and exert better control over information. A cutting-edge operational model will lead to seamless workflows, assets and rights management, as well as systematic storage and retrieval of data. Robust content management solutions address a host of challenges from complex print/SD-centric content processes to legal exposure of rights/contracts. Our content management software empowers firms to reduce content production costs via automation, collaboration, tools integration, and workflow processes.</div>
+                        <button style="background: #fa7b1e; border:none; padding: 5px 5px; border-radius: 30px; font-size: 16px; color: #fff!important;"><a href="#" class="read-more" style="padding: 5px 10px!important; font-size:12px!important;">Portfolio <span class="fa fa-angle-double-right"></span></a></button>
+                    </div>
+                </div>
+          
+                <!--Service Block Two-->
+                <div class="service-block-two col-lg-4 col-md-6 col-sm-6 col-xs-12">
+                    <div class="inner-box">
+                        <div class="image-box" style="background-image:url({%static 'company/images/m-vendor.jpg' %});"></div>
+                        <div class="icon-box">
+                            <span class="flaticon"><img src="{% static 'company/images/icons/Untitled-1.png' %}" alt="Corporate Consultation services in Noida, Delhi, NCR"></span>
+                        </div>
+                        <h3 class="text-uppercase">MULTIVENDOR E-COMMERCE</h3>
+                        <div class="text" style="text-align: justify;">NetcoreInfo Business Services provides eCommerce Web Development Services for Multi-Vendor Projects and Customize Multi-Vendor Web Application Development, Multi-Vendor Web Developers, Multi-Vendor Website Designers & Multi-Vendor Web Programmers based in Noida & Delhi, India. Our customized Multi-Vendor eCommerce services allows you to create an online marketplace where multiple vendors can manage sales of their own products through one common web store under main domain, similar to site admin. It is highly secure and custom developed platform for your ecommerce store, created by experienced programmers.</div>
+                        <button style="background: #fa7b1e; border:none; padding: 5px 5px; border-radius: 30px; font-size: 16px; color: #fff!important;"><a href="#" class="read-more" style="padding: 5px 10px!important; font-size:12px!important;">Portfolio <span class="fa fa-angle-double-right"></span></a></button>
+                    </div>
+                </div>
+ 
+                <div class="service-block-two col-lg-4 col-md-6 col-sm-6 col-xs-12">
+                    <div class="inner-box">
+                        <div class="image-box" style="background-image:url({%static 'company/images/softwar-s.jpg' %});"></div>
+                        <div class="icon-box">
+                            <span class="flaticon"><img src="{% static 'company/images/icons/2-1.png' %}" alt="Corporate Consultation services in Noida, Delhi, NCR"></span>
+                        </div>
+                        <h3 class="text-uppercase">SOFTWARE SOLUTIONS</h3>
+                        <div class="text" style="text-align: justify;">By bringing domain expertise, strategic thinking, and certified talent pool, NetcoreInfo Business Services deliver simple technology solutions for complex business issues. With our customer-centric approach and flexible processes, we have been able to create engagement models that drive cost and time reduction in projects while maintaining the highest software engineering standards. Our experience in providing successful web development, backend web programming, ecommerce software development services and maintenance of sophisticated applications helps us to create trouble free working solutions.</div>
+                        <button style="background: #fa7b1e; border:none; padding: 5px 5px; border-radius: 30px; font-size: 16px; color: #fff!important;"><a href="#" class="read-more" style="padding: 5px 10px!important; font-size:12px!important;">Portfolio <span class="fa fa-angle-double-right"></span></a></button>
+                    </div>
+                </div>
+
+                <div class="service-block-two col-lg-4 col-md-6 col-sm-6 col-xs-12">
+                    <div class="inner-box"><div class="image-box" style="background-image:url({%static 'company/images/web-hosting.jpg' %});">
+                        </div>
+                        <div class="icon-box"><span class="flaticon"><img src="{% static 'company/images/icons/3-1.png' %}" alt="Corporate Consultation services in Noida, Delhi, NCR">
+                            </span></div><h3 class="text-uppercase">WEB HOSTING DEVELOPMENT</h3>
+                        <div class="text" style="text-align: justify;">Web hosting service is a business and it offers the technologies required for the website to be viewed/represented on the internet. Most probably the websites or web pages are hosted and saved on a special computer known as servers.
+We offer the best web hosting service and support available anywhere. From WordPress blogs and portfolio sites to small business sites, e-commerce, and beyond, NetcoreInfo Business Services has a reliable hosting plan that’s right for you. We provide cheap & best web hosting to our customers or clients. We understand that, Small companies needs low cost plan, that's why we have come up with affordable hosting price for our customers & have maintained our position as one of the best service providers in India.</div>
+                        <button style="background: #fa7b1e; border:none; padding: 5px 5px; border-radius: 30px; font-size: 16px; color: #fff!important;"><a href="#" class="read-more" style="padding: 5px 10px!important; font-size:12px!important;">Portfolio <span class="fa fa-angle-double-right"></span></a></button>
+                    </div>
+                </div>
+
+                <div class="service-block-two col-lg-4 col-md-6 col-sm-6 col-xs-12">
+                    <div class="inner-box">
+                        <div class="image-box" style="background-image:url({% static 'company/images/erp.jpg' %});"></div>
+                        <div class="icon-box">
+                            <span class="flaticon"><img src="{% static 'company/images/icons/4-2.png' %}" alt="Corporate Consultation services in Noida, Delhi, NCR"></span>
+                        </div>
+                        <h3 class="text-uppercase">ERP DEVELOPMENT</h3>
+                        <div class="text"><p style="text-align: justify;">NetcoreInfo Business Services is one of the leading technology based solutions provider, which is also an ERP software development company in India.NetcoreInfo Business Services being an ERP Development Company has developed a complete customized ERP solution for Oil & Gas companies, education sector, manufacturing sector and many more. The software allows managing all the processes such as Inventory, Sale & Purchase, Mileage review, order tracking, production, planning, CRM (Customer relationship management), HRMS (Human resource management software) Payroll, Finances, commerce, Accounting, Delivery, Reports etc.  We at NetcoreInfo Business Services provide you the best Enterprise resource planning (ERP), business management software that allows an organization to use a system of integrated applications to manage the business.</p></div>
+                        <button style="background: #fa7b1e; border:none; padding: 5px 5px; border-radius: 30px; font-size: 16px; color: #fff!important;"><a href="#" class="read-more" style="padding: 5px 10px!important; font-size:12px!important;" >Portfolio <span class="fa fa-angle-double-right"></span></a></button>
+                    </div>
+                </div>
+                <!-- Modal -->
+
+            </div>
+        </div>
+    </section>
+
+                
+            
+            <!--Career area-->
+  <div id="career" style="">
+<div class="container">
+<div class="row">
+<div class="col-md-5">
+    
+    </div>
+    <div class="col-md-2 sec-title-two">
+        <h2 class="heading ">CAREER</h2>
+        
+    </div>
+    
+    <div class="col-md-5">
+    
+    </div>
+</div>
+
+<br>
+<div class="row">
+<div class="service-block-two col-lg-4 col-md-6 col-sm-6 col-xs-12">
+    {% for content1 in allcontent %}
+                    <div class="inner-box">
+                        <div class="image-box" style="background-image:url({{ content1.backimage.url }});"></div>
+                        
+                        <h3 class="text-uppercase" style="padding-top: 10px;" >{{ content1.title }}</h3>
+                        
+                        <h3 class="text-uppercase" style="font-size: 24px;" >{{ content1.ContentTitle }}</h3>
+                        <div class="text" style="text-align: justify;">
+                        <ul style=" list-style:circle">
+                            <li>
+                            {{ content1.content| safe }}
+                            </li>
+                            
+                        </ul>
+                        </div>
+                        <button class="read-more" style="padding: 5px 10px;; color: #fff; background: #ff6c00; border: none; border-radius: 30px; font-size: 14px;">
+                            Apply Now
+                        </button>
+                    </div>
+    {% endfor %}
+
+                </div>
+    
+        </div>
+    </div>
+</div>       
+
+                <!--end career area-->
+         
+            
+            <!--------Our clients-------->
+             <div class="section_works">
+        <div class="container">
+            <div class="myWork" style="">
+                <div class="heading sec-title-two" >
+                    <h2>Our Clients</h2>
+
+                </div>
+                <div class="static_web_carousel" style="margin-bottom: 50px;">
+                    <div class="owl-carousel owl-theme">
+                        <div class="item boxes">
+                            {% for sponsor in sponsors %}
+                            <img src="{{ sponsor.image.url }}" alt=".." style="height: 60px">
+                            {% endfor %}
+                        </div>
+                        
+                    </div>
+                </div>
+                    </div>
+        </div>
+    </div>
+{% endblock content%}

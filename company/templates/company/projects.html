@@ -1,0 +1,126 @@
+{% extends "company/base.html" %}
+{% load static %}
+<!--  we can use base template by extending it; we want our for loop or any other content present in home page to override the blockcontent of base.html-->
+{% block content %}	
+
+			<!-- start banner Area -->
+			<section class="banner-area relative" id="home">	
+				<div class="overlay overlay-bg">
+                <img src="{% static 'company/img/services-bg/project-banner.jpg' %}" alt=".." width="100%"; style="margin-top: 115px;" class="img-resp">
+                </div>
+				<div class="container">				
+					<div class="row d-flex align-items-center justify-content-center">
+						<div class="about-content col-lg-12">
+							<h1 style="color: #000">
+								Projects				
+							</h1>	
+							<p class="link-nav" style="color: #000"><a href="index.html" style="color: #000;">Home </a>  <span class="lnr lnr-arrow-right"></span>  <a href="projects.html" style="color: #000;"> Projects</a></p>
+						</div>	
+					</div>
+				</div>
+			</section>
+			<!-- End banner Area -->	
+				
+
+			<!-- Start project Area -->
+			<section class="project-area section-gap" id="project">
+				<div class="container">
+					<div class="row justify-content-center">
+						<div class="col-md-8 pb-30 header-text text-center">
+							<h1 class="mb-10" style="margin-top: 20px;">Latest Finished Projects</h1>
+							<p>
+								Who are in extremely love with eco friendly system..
+							</p>
+						</div>
+					</div>						
+					<div class="row">
+						<div class="col-lg-4 col-md-6">
+							<a href="https://www.techaheadcorp.com/wp-content/themes/techahead/assets/images/portfolio/atheaque.png" class="img-gal">
+								<img class="img-fluid single-project" src="https://www.techaheadcorp.com/wp-content/themes/techahead/assets/images/portfolio/atheaque.png" style="width: 289px; height: 339px;" alt="">
+							</a>	
+						</div>
+                        
+                        <div class="col-lg-4 col-md-3">
+							<a href="https://www.techaheadcorp.com/wp-content/themes/techahead/assets/images/portfolio/atheaque.png" class="img-gal">
+								<img class="img-fluid single-project" src="https://www.techaheadcorp.com/wp-content/themes/techahead/assets/images/portfolio/atheaque.png" style="width: 289px; height: 339px;" alt="">
+							</a>	
+						</div>
+                        
+						<div class="col-lg-4 col-md-4">
+							<a href="https://www.techaheadcorp.com/wp-content/themes/techahead/assets/images/portfolio/etelmed.png" class="img-gal">
+								<img class="img-fluid single-project" src="https://www.techaheadcorp.com/wp-content/themes/techahead/assets/images/portfolio/etelmed.png" style="width: 289px; height: 339px;" alt="">
+							</a>	
+						</div>		
+                        
+                        <div class="col-lg-2"></div>
+						<div class="col-lg-4 col-md-6">
+							<a href="https://www.techaheadcorp.com/wp-content/themes/techahead/assets/images/portfolio/fitchip.png" class="img-gal">
+								<img class="img-fluid single-project" src="https://www.techaheadcorp.com/wp-content/themes/techahead/assets/images/portfolio/fitchip.png" style="width: 289px; height: 339px;" alt="">
+							</a>	
+						</div>
+                        <div class="clear"></div>
+						<div class="col-lg-6 col-md-6">
+							<a href="https://www.techaheadcorp.com/wp-content/themes/techahead/assets/images/portfolio/fitchip.png" class="img-gal">
+								<img class="img-fluid single-project" src="https://www.techaheadcorp.com/wp-content/themes/techahead/assets/images/portfolio/fitchip.png" style="width: 289px; height: 339px;" alt="">
+							</a>	
+						</div>
+                        <div class="clear"></div>
+                        <div class="col-lg-4 col-md-6">
+							<a href="https://www.techaheadcorp.com/wp-content/themes/techahead/assets/images/portfolio/atheaque.png" class="img-gal">
+								<img class="img-fluid single-project" src="https://www.techaheadcorp.com/wp-content/themes/techahead/assets/images/portfolio/atheaque.png" style="width: 289px; height: 339px;" alt="">
+							</a>	
+						</div>
+                        
+                        <div class="col-lg-4 col-md-3">
+							<a href="https://www.techaheadcorp.com/wp-content/themes/techahead/assets/images/portfolio/atheaque.png" class="img-gal">
+								<img class="img-fluid single-project" src="https://www.techaheadcorp.com/wp-content/themes/techahead/assets/images/portfolio/atheaque.png" style="width: 289px; height: 339px;" alt="">
+							</a>	
+						</div>
+                        
+						<div class="col-lg-4 col-md-4">
+							<a href="https://www.techaheadcorp.com/wp-content/themes/techahead/assets/images/portfolio/etelmed.png" class="img-gal">
+								<img class="img-fluid single-project" src="https://www.techaheadcorp.com/wp-content/themes/techahead/assets/images/portfolio/etelmed.png" style="width: 289px; height: 339px;" alt="">
+							</a>	
+						</div>	
+					</div>
+				</div>	
+			</section>
+			<!-- End project Area -->
+
+			<!-- Start cat Area -->
+			<section class="cat-area section-gap aboutus-cat" id="feature">
+				<div class="container">							
+					<div class="row">
+						<div class="col-lg-4">	
+							<div class="single-cat d-flex flex-column">
+								<a href="#" class="hb-sm-margin mx-auto d-block"><span class="hb hb-sm inv hb-facebook-inv"><span class="lnr lnr-magic-wand"></span></span></a>
+								<h4 class="mb-20" style="margin-top: 23px;">Maintenance</h4>
+								<p>
+									inappropriate behavior is often laughed off as “boys will be boys,” women face higher conduct standards especially in the workplace. That’s why.
+								</p>
+							</div>															
+						</div>
+						<div class="col-lg-4">	
+							<div class="single-cat">
+								<a href="#" class="hb-sm-margin mx-auto d-block"><span class="hb hb-sm inv hb-facebook-inv"><span class="lnr lnr-rocket"></span></span></a>
+								<h4 class="mt-40 mb-20">Residental Service</h4>
+								<p>
+									inappropriate behavior is often laughed off as “boys will be boys,” women face higher conduct standards especially in the workplace. That’s why.
+								</p>
+							</div>															
+						</div>
+						<div class="col-lg-4">
+							<div class="single-cat">
+								<a href="#" class="hb-sm-margin mx-auto d-block"><span class="hb hb-sm inv hb-facebook-inv"><span class="lnr lnr-bug"></span></span></a>
+								<h4 class="mt-40 mb-20">Commercial Service</h4>
+								<p>
+									inappropriate behavior is often laughed off as “boys will be boys,” women face higher conduct standards especially in the workplace. That’s why.
+								</p>
+							</div>							
+						</div>
+					</div>
+				</div>	
+			</section>
+			<!-- End cat Area -->						
+
+{% endblock content%}

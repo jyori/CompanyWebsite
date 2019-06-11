@@ -1,0 +1,60 @@
+{% extends "company/base.html" %}
+{% load static %}
+<!--  we can use base template by extending it; we want our for loop or any other content present in home page to override the blockcontent of base.html-->
+{% block content %}	 
+			<!-- start banner Area -->
+			<section class="banner-area relative" id="home">	
+				<div class="overlay overlay-bg" ></div>
+				<div class="container">
+					<div class="row d-flex align-items-center justify-content-center">
+						<div class="about-content col-lg-12">
+							<h1 class="text-white">
+								Web Development				
+							</h1>	
+							<p class="text-white link-nav"><a href="{% url 'index' %}">Home </a>  <span class="lnr lnr-arrow-right"></span>  <a href="{% url 'web_development' %}"> Web Development</a></p>
+						</div>											
+					</div>
+				</div>
+			</section>
+			<!-- End banner Area -->	
+			
+			<!-- Start blog-posts Area -->
+			<section class="blog-posts-area section-gap">
+				<div class="container">
+					<div class="row">
+                            <div class="sec-title-one clearfix">
+                <div class="sec-title-two">
+                    <h2>WEB DEVELOPMENT</h2>
+                    <div class="text" style="text-align: justify;"><strong>NetcoreInfo Business Services has been a trusted and well-established IT service providing Company since a decade as we create meaningful brands through individuality, print and digital experiences for small entrepreneurs all over the world. NetcoreInfo Business Services provides services for small to large businesses around the country. Our specialities in Domains include Custom Website Design and Development, E-commerce Solutions, Logo Designs, Software Solutions, Digital Marketing Solutions, Mobility Solutions, etc.
+NetcoreInfo Business Services provide effective & Measurable Online Brand Engineering Solutions and our major services include Web Development, Mobile Application Development, Web Application Development, Open Source Development, Graphic Designing, Internet Marketing, E-Commerce Development, Multivendor Ecommerce, Content Management System, Software solution, Web Hosting Services, ERP Development, and many more.</strong></div>
+                </div>
+            </div>
+					</div>
+				</div>	
+			</section>
+            
+            <div class="sec-title-two">
+            
+            <h2 style="font-size: 24px;">Tools &amp; Technologies used in Web Development:
+</h2>
+            <p class="text">
+                Angular, Polymer, HTML5, CSS3, jQuery, Bootstrap, Firebase, Mocha, Spring, .NET, Ruby on Rails, PHP, Node.js, Python, MS SQL Server, Oracle Database, MySQL, PostgreSQL, Apache Cassandra, MongoDB , Redis, React, Java, SQLite 
+                
+                </p>
+            
+            </div>
+            
+            <div class="sec-title-two">
+            
+            <h2 style="font-size: 24px;">Process
+</h2>
+            <p class="text">
+                Angular, Polymer, HTML5, CSS3, jQuery, Bootstrap, Firebase, Mocha, Spring, .NET, Ruby on Rails, PHP, Node.js, Python, MS SQL Server, Oracle Database, MySQL, PostgreSQL, Apache Cassandra, MongoDB , Redis, React, Java, SQLite 
+                
+                </p>
+            
+            </div>
+            
+			<!-- End blog-posts Area -->
+			
+{% endblock content%}

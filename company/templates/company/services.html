@@ -1,0 +1,236 @@
+{% extends "company/base.html" %}
+{% load static %}
+<!--  we can use base template by extending it; we want our for loop or any other content present in home page to override the blockcontent of base.html-->
+{% block content %} 
+
+			<!-- start banner Area -->
+			<section class="banner-area relative" id="home">	
+				<div class="overlay overlay-bg"></div>
+				<div class="container">				
+					<div class="row d-flex align-items-center justify-content-center">
+						<div class="about-content col-lg-12">
+							<h1 class="text-white">
+								Services				
+							</h1>	
+							<p class="text-white link-nav"><a href="{% url 'index' %}">Home </a>  <span class="lnr lnr-arrow-right"></span>  <a href="{% url 'services' %}"> Services</a></p>
+						</div>	
+					</div>
+				</div>
+			</section>
+			<!-- End banner Area -->	
+				
+			<!-- Start service Area -->
+			<section class="training-programs">
+        <div class="auto-container">
+            <div class="sec-title-one clearfix">
+                <div class="sec-title-two">
+                    <h2>Services</h2>
+                    <div class="text" style="text-align: justify;"><strong>NetcoreInfo Business Services has been a trusted and well-established IT service providing Company since a decade as we create meaningful brands through individuality, print and digital experiences for small entrepreneurs all over the world. NetcoreInfo Business Services provides services for small to large businesses around the country. Our specialities in Domains include Custom Website Design and Development, E-commerce Solutions, Logo Designs, Software Solutions, Digital Marketing Solutions, Mobility Solutions, etc.
+NetcoreInfo Business Services provide effective & Measurable Online Brand Engineering Solutions and our major services include Web Development, Mobile Application Development, Web Application Development, Open Source Development, Graphic Designing, Internet Marketing, E-Commerce Development, Multivendor Ecommerce, Content Management System, Software solution, Web Hosting Services, ERP Development, and many more.</strong></div>
+                </div>
+            </div>
+            <div class="row clearfix">
+                <!--Service Block Two-->
+                <div class="service-block-two col-lg-4 col-md-6 col-sm-6 col-xs-12">
+                    <div class="inner-box">
+                        <div class="image-box" style="background-image:url({% static 'company/images/wd.jpg'%});"></div>
+                        <div class="icon-box">
+                            <span class="flaticon"><img src="{% static 'company/images/icons/software-development.png' %}" alt="Software Development in Noida, Delhi, NCR"></span>
+                        </div>
+                        <h3 class="text-uppercase">WEB DEVELOPMENT</h3>
+                        <div class="text">Get the website features and functionality of your choice & need.</div>
+                        <button style="background: #fa7b1e; border:none; padding: 5px 5px; border-radius: 30px; font-size: 16px; color: #fff!important;"><a href="web-development.html" class="read-more" style="padding: 5px 10px!important; font-size:12px!important;">Portfolio <span class="fa fa-angle-double-right"></span></a></button>
+
+                    </div>
+                </div>
+                <!--Service Block Two-->
+                <div class="service-block-two col-lg-4 col-md-6 col-sm-6 col-xs-12">
+                    <div class="inner-box">
+                        <div class="image-box" style="background-image:url(images/mobile_development.jpg);"></div>
+                        <div class="icon-box">
+                            <span class="flaticon"><img src="images/icons/dynamic-website.png" alt="Dynamic Website Development in Noida, Delhi, NCR"></span>
+                        </div>
+                        <h3 class="text-uppercase">MOBILE APP DEVELOPMENT</h3>
+                        <div class="text">We can help our clients by developing different type of apps catering to various fields like enterprise, e-commerce, games, entertainment, etc.</div>
+             <button style="background: #fa7b1e; border:none; padding: 5px 5px; border-radius: 30px; font-size: 16px; color: #fff!important;"><a href="#" class="read-more" style="padding: 5px 10px!important; font-size:12px!important;">Portfolio <span class="fa fa-angle-double-right"></span></a></button>
+                        
+                    </div>
+                </div>
+                <!--Service Block Two-->
+                <div class="service-block-two col-lg-4 col-md-6 col-sm-6 col-xs-12">
+                    <div class="inner-box">
+                        <div class="image-box" style="background-image:url(images/wa.jpg);"></div>
+                        <div class="icon-box">
+                            <span class="flaticon"><img src="images/icons/web-application.png" alt="Best Web Applications Development in Noida, Delhi, NCR"></span>
+                        </div>
+                        <h3 class="text-uppercase">Web Application</h3>
+                        <div class="text">Our team of talented developers can make your site function in whichever manner you please. Custom programming and development is our specialty..</div>
+                     <button style="background: #fa7b1e; border:none; padding: 5px 5px; border-radius: 30px; font-size: 16px; color: #fff!important;"><a href="#" class="read-more" style="padding: 5px 10px!important; font-size:12px!important;">Portfolio <span class="fa fa-angle-double-right"></span></a></button>
+                    </div>
+                    <!-- Trigger the modal with a button -->
+
+
+   
+                </div>
+                <!--Service Block Two-->
+                <div class="service-block-two col-lg-4 col-md-6 col-sm-6 col-xs-12">
+                    <div class="inner-box">
+                        <div class="image-box" style="background-image:url(images/app.jpg);"></div>
+                        <div class="icon-box">
+                            <span class="flaticon"><img src="images/icons/software-development.png" alt="Android &amp; iOS Mobile Apps Development company in Noida, Delhi, NCR"></span>
+                        </div>
+                        <h3 class="text-uppercase">Open Source Development</h3>
+                        <div class="text">NetcoreInfo Solution will provide you with the most efficient solution possible for your needs. We offer you a full range of Open Source development related platform including CMS platform and Open Source for E-Commerce platform.</div>
+                        <button style="background: #fa7b1e; border:none; padding: 5px 5px; border-radius: 30px; font-size: 16px; color: #fff!important;"><a href="#" class="read-more" style="padding: 5px 10px!important; font-size:12px!important;">Portfolio <span class="fa fa-angle-double-right"></span></a></button>
+                    </div>
+                </div>
+ 
+                <!--Service Block Two-->
+                <div class="service-block-two col-lg-4 col-md-6 col-sm-6 col-xs-12">
+                    <div class="inner-box">
+                        <div class="image-box" style="background-image:url(images/seo-bg.jpg);"></div>
+                        <div class="icon-box">
+                            <span class="flaticon"><img src="images/icons/seo.png" alt="Proven results in SEO services in Noida, Delhi, NCR"></span>
+                        </div>
+                        <h3 class="text-uppercase">Graphic Designing</h3>
+                        <div class="text">What makes a best branding agency? We offer full service branding, and design services including Company Naming, Logo Designing, Business Cards, Brochures, and more.</div>
+                        <button style="background: #fa7b1e; border:none; padding: 5px 5px; border-radius: 30px; font-size: 16px; color: #fff!important;"><a href="#" class="read-more" style="padding: 5px 10px!important; font-size:12px!important;">Portfolio <span class="fa fa-angle-double-right"></span></a></button>
+                    </div>
+                </div>
+        
+                <!--Service Block Two-->
+                <div class="service-block-two col-lg-4 col-md-6 col-sm-6 col-xs-12">
+                    <div class="inner-box">
+                        <div class="image-box" style="background-image:url(images/cw-bg.jpg);"></div>
+                        <div class="icon-box">
+                            <span class="flaticon"><img src="images/icons/content-writing.png" alt="Best &amp; original Content Writing in Noida, Delhi, NCR"></span>
+                        </div>
+                        <h3 class="text-uppercase">Internet Marketing</h3>
+                        <div class="text">Search Engine Optimization is an art form, raising brand awareness and in turn, increasing traffic to your website. There are many possible approaches you can take and identifying your target market is key. Here are 6 practical approaches we take to every SEO Analysis.</div>
+                        <button style="background: #fa7b1e; border:none; padding: 5px 5px; border-radius: 30px; font-size: 16px; color: #fff!important;"><a href="#" class="read-more" style="padding: 5px 10px!important; font-size:12px!important;">Portfolio <span class="fa fa-angle-double-right"></span></a></button>
+                    </div>
+                </div>
+
+                <!--Service Block Two-->
+                <div class="service-block-two col-lg-4 col-md-6 col-sm-6 col-xs-12">
+                    <div class="inner-box">
+                        <div class="image-box" style="background-image:url(images/acad-p.jpg);"></div>
+                        <div class="icon-box">
+                            <span class="flaticon"><img src="images/icons/academic-projects.png" alt="College projects for B.Tech., M.Tech., BCA, MCA students"></span>
+                        </div>
+                        <h3 class="text-uppercase">E-commerce Development</h3>
+                        <div class="text">We not only develop projects for college students but also make them understand every aspect of it so that they 
+                        	know the ins and outs of it. We use .NET, JAVA, C#, C++, C, MATLAB, NS2, ASP.NET ...</div>
+                        <button style="background: #fa7b1e; border:none; padding: 5px 5px; border-radius: 30px; font-size: 16px; color: #fff!important;"><a href="#" class="read-more" style="padding: 5px 10px!important; font-size:12px!important;">Portfolio <span class="fa fa-angle-double-right"></span></a></button>
+                     
+                    </div>
+                </div>
+ 
+                <!--Service Block Two-->
+                <div class="service-block-two col-lg-4 col-md-6 col-sm-6 col-xs-12">
+                    <div class="inner-box">
+                        <div class="image-box" style="background-image:url(images/traning.jpg);"></div>
+                        <div class="icon-box">
+                            <span class="flaticon"><img src="images/icons/training.png" alt="Software training in Noida, Delhi, NCR"></span>
+                        </div>
+                        <h3 class="text-uppercase">Training</h3>
+                        <div class="text">Rubix Technologies, for the past seven years, provides academic training to different Universities &amp; Colleges in 
+                        	the field of software &amp; web development. Our sincere and modest approach make students...</div>
+                        <button style="background: #fa7b1e; border:none; padding: 5px 5px; border-radius: 30px; font-size: 16px; color: #fff!important;"><a href="#" class="read-more" style="padding: 5px 10px!important; font-size:12px!important;">Portfolio <span class="fa fa-angle-double-right"></span></a></button>
+                    </div>
+                </div>
+
+                <!--Service Block Two-->
+                <div class="service-block-two col-lg-4 col-md-6 col-sm-6 col-xs-12">
+                    <div class="inner-box">
+                        <div class="image-box" style="background-image:url(images/m-vendor.jpg);"></div>
+                        <div class="icon-box">
+                            <span class="flaticon"><img src="images/icons/Untitled-1.png" alt="Corporate Consultation services in Noida, Delhi, NCR"></span>
+                        </div>
+                        <h3 class="text-uppercase">MULTIVENDOR E-COMMERCE</h3>
+                        <div class="text">It is highly secure and custom developed platform for your ecommerce store, created by experienced programmers.</div>
+                        <button style="background: #fa7b1e; border:none; padding: 5px 5px; border-radius: 30px; font-size: 16px; color: #fff!important;"><a href="#" class="read-more" style="padding: 5px 10px!important; font-size:12px!important;">Portfolio <span class="fa fa-angle-double-right"></span></a></button>
+                    </div>
+                </div>
+
+                <div class="service-block-two col-lg-4 col-md-6 col-sm-6 col-xs-12">
+                    <div class="inner-box">
+                        <div class="image-box" style="background-image:url(images/softwar-s.jpg);"></div>
+                        <div class="icon-box">
+                            <span class="flaticon"><img src="images/icons/2-1.png" alt="Corporate Consultation services in Noida, Delhi, NCR"></span>
+                        </div>
+                        <h3 class="text-uppercase">SOFTWARE SOLUTIONS</h3>
+                        <div class="text">ur experience in providing successful web development, backend web programming, ecommerce software development services and maintenance of sophisticated applications helps us to create trouble free working solutions.</div>
+                        <button style="background: #fa7b1e; border:none; padding: 5px 5px; border-radius: 30px; font-size: 16px; color: #fff!important;"><a href="#" class="read-more" style="padding: 5px 10px!important; font-size:12px!important;">Portfolio <span class="fa fa-angle-double-right"></span></a></button>
+                    </div>
+                </div>
+
+
+                <div class="service-block-two col-lg-4 col-md-6 col-sm-6 col-xs-12">
+                    <div class="inner-box">
+                        <div class="image-box" style="background-image:url(images/web-hosting.jpg);"></div>
+                        <div class="icon-box">
+                            <span class="flaticon"><img src="images/icons/3-1.png" alt="Corporate Consultation services in Noida, Delhi, NCR"></span>
+                        </div>
+                        <h3 class="text-uppercase">WEB HOSTING DEVELOPMENT</h3>
+                        <div class="text">We offer the best web hosting service and support available anywhere. From WordPress blogs and portfolio sites to small business sites, e-commerce, and beyond, NetcoreInfo Solution has a reliable hosting plan that’s right for you.</div>
+                        <button style="background: #fa7b1e; border:none; padding: 5px 5px; border-radius: 30px; font-size: 16px; color: #fff!important;"><a href="#" class="read-more" style="padding: 5px 10px!important; font-size:12px!important;">Portfolio <span class="fa fa-angle-double-right"></span></a></button>
+                    </div>
+                </div>
+            
+                <div class="service-block-two col-lg-4 col-md-6 col-sm-6 col-xs-12">
+                    <div class="inner-box">
+                        <div class="image-box" style="background-image:url(images/erp.jpg);"></div>
+                        <div class="icon-box">
+                            <span class="flaticon"><img src="images/icons/4-2.png" alt="Corporate Consultation services in Noida, Delhi, NCR"></span>
+                        </div>
+                        <h3 class="text-uppercase">ERP DEVELOPMENT</h3>
+                        <div class="text">We at NetcoreInfo Solution provide you the best Enterprise resource planning (ERP), business management software that allows an organization to use a system of integrated applications to manage the business.</div>
+                        <button style="background: #fa7b1e; border:none; padding: 5px 5px; border-radius: 30px; font-size: 16px; color: #fff!important;"><a href="#" class="read-more" style="padding: 5px 10px!important; font-size:12px!important;">Portfolio <span class="fa fa-angle-double-right"></span></a></button>
+                    </div>
+                </div>
+             
+            </div>
+        </div>
+    </section>
+			<!-- End service Area -->			
+
+			<!-- Start cat Area -->
+			<section class="cat-area section-gap aboutus-cat" id="feature">
+				<div class="container">							
+					<div class="row">
+						<div class="col-lg-4">	
+							<div class="single-cat d-flex flex-column">
+								<a href="#" class="hb-sm-margin mx-auto d-block"><span class="hb hb-sm inv hb-facebook-inv"><span class="lnr lnr-magic-wand"></span></span></a>
+								<h4 class="mb-20" style="margin-top: 23px;">Maintenance</h4>
+								<p>
+									inappropriate behavior is often laughed off as “boys will be boys,” women face higher conduct standards especially in the workplace. That’s why.
+								</p>
+							</div>															
+						</div>
+						<div class="col-lg-4">	
+							<div class="single-cat">
+								<a href="#" class="hb-sm-margin mx-auto d-block"><span class="hb hb-sm inv hb-facebook-inv"><span class="lnr lnr-rocket"></span></span></a>
+								<h4 class="mt-40 mb-20">Residental Service</h4>
+								<p>
+									inappropriate behavior is often laughed off as “boys will be boys,” women face higher conduct standards especially in the workplace. That’s why.
+								</p>
+							</div>															
+						</div>
+						<div class="col-lg-4">
+							<div class="single-cat">
+								<a href="#" class="hb-sm-margin mx-auto d-block"><span class="hb hb-sm inv hb-facebook-inv"><span class="lnr lnr-bug"></span></span></a>
+								<h4 class="mt-40 mb-20">Commercial Service</h4>
+								<p>
+									inappropriate behavior is often laughed off as “boys will be boys,” women face higher conduct standards especially in the workplace. That’s why.
+								</p>
+							</div>							
+						</div>
+					</div>
+				</div>	
+			</section>
+			<!-- End cat Area -->						
+
+{% endblock content%}
+            
+				
