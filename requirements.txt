@@ -17,7 +17,7 @@ gunicorn==19.9.0
 idna==2.7
 jmespath==0.9.4
 panda==0.3.1
-Pillow==5.4.1
+Pillow==8.3.2
 psycopg2==2.8.2
 pynliner==0.8.0
 python-dateutil==2.8.0
